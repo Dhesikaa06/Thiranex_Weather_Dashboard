@@ -1,0 +1,169 @@
+/* ===========================
+   THIRANEX TASK 4
+   WEATHER DASHBOARD CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/* Main */
+
+main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+}
+
+/* Search Box */
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.search-box input{
+    width:280px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+.search-box button{
+    padding:12px 22px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#084298;
+}
+
+/* Weather Card */
+
+.weather-card{
+    width:100%;
+    max-width:420px;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    display:none;
+}
+
+.weather-card img{
+    width:100px;
+    height:100px;
+    margin:10px 0;
+}
+
+.weather-card h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.weather-card p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* Loading */
+
+.loading{
+    display:none;
+    font-size:20px;
+    color:white;
+    margin-bottom:20px;
+}
+
+/* Error */
+
+.error{
+    display:none;
+    background:#dc3545;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.search-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+.search-box input{
+    width:100%;
+    max-width:320px;
+}
+
+.search-box button{
+    width:100%;
+    max-width:320px;
+}
+
+.weather-card{
+    width:95%;
+}
+
+}
