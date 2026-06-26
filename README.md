@@ -45,7 +45,7 @@ Thiranex_Weather_Dashboard
 ├── style.css
 ├── script.js
 ├── README.md
-└── assets
+└── screenshots
 ```
 
 ---
